@@ -15,4 +15,8 @@ defmodule Elixirfirstproject do
     def shuffleNames(names) do
       Enum.shuffle(names)
     end
+    def saveNames(names,filename) do
+        binary = :erlang.term_to_binary(names)
+        File.write(filename,binary)
+    end
 end
