@@ -12,4 +12,7 @@ defmodule Elixirfirstproject do
     def getNamesAfterI(names,index) do
       Enum.split(names,index)
     end
+    def shuffleNames(names) do
+      Enum.shuffle(names)
+    end
 end
