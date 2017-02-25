@@ -1,6 +1,6 @@
 # Elixirfirstproject
 
-**TODO: Add description**
+##First elixir project to get acquainted with elixir system
 
 ## Installation
 
@@ -21,4 +21,3 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
       [applications: [:elixirfirstproject]]
     end
     ```
-
