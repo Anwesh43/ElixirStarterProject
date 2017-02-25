@@ -9,4 +9,7 @@ defmodule Elixirfirstproject do
         "Mr #{firstName} #{lastName}"
       end
     end
+    def getNamesAfterI(names,index) do
+      Enum.split(names,index)
+    end
 end
