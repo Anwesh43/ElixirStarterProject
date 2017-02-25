@@ -19,4 +19,7 @@ defmodule Elixirfirstproject do
         binary = :erlang.term_to_binary(names)
         File.write(filename,binary)
     end
+    def getRandomNamesAfterI(index) do
+      createNames() |> shuffleNames |> getNamesAfterI index
+    end
 end
