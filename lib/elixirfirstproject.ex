@@ -22,4 +22,11 @@ defmodule Elixirfirstproject do
     def getRandomNamesAfterI(index) do
       createNames() |> shuffleNames |> getNamesAfterI index
     end
+    def loadNames(fileName) do
+      {status,binary} = File.read(fileName)
+      case status do
+          :ok -> :erlang.binary_to_term(binary)
+          :error -> "file doesn't exist"
+      end
+    end
 end
